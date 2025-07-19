@@ -20,15 +20,15 @@ backbone_net: 'mvit_s'
 fused_posi: 1
 
 shape: [224, 224]
-output_root: "E:\chexiao\projects\output\output_mobilenet"
+output_root: 
 
-file_train: "D:\SLR_dataset\WLASL\origin_frames\wlasl100train_all_frame.txt"
-file_val: "D:\SLR_dataset\WLASL\origin_frames\wlasl100val_all_frame.txt"
-file_test: "D:\SLR_dataset\WLASL\origin_frames\wlasl100test_all_frame.txt"
-input: "D:\SLR_dataset\WLASL\origin_frames"
-keypoints_body_path: "E:\SLR_dataset\wlasl\body_keypoint"
+file_train: 
+file_val: 
+file_test: 
+input: 
+keypoints_body_path: 
 dataset: "wlasl100"
-datadir: "D:\SLR_dataset\WLASL\origin_frames"
+datadir: 
 num_frames: 16
 frames_per_group: 1
 num_clips: 1
@@ -36,6 +36,6 @@ num_class: 100
 modality: 'rgb'
 dense_sampling: False
 resume: False
-resume_path: "E:\chexiao\projects\output1\output_mvits_pose_100\best_model.pth"
+resume_path: 
 
 
