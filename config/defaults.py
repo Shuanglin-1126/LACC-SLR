@@ -35,15 +35,15 @@ _C.fused_posi = 1
 _C.fp16 = False
 
 _C.shape = [224, 224]
-_C.output_root = r"E:\chexiao\projects\output\output_mobilenet"
+_C.output_root =  # your output path
 
-_C.file_train = r'D:\SLR_dataset\WLASL\origin_frames\wlasl100train_all_frame.txt'
-_C.file_val = r'D:\SLR_dataset\WLASL\origin_frames\wlasl100val_all_frame.txt'
-_C.file_test = r'D:\SLR_dataset\WLASL\origin_frames\wlasl100test_all_frame.txt'
-_C.input = r"D:\SLR_dataset\WLASL\origin_frames"
-_C.keypoints_body_path = r"E:\SLR_dataset\wlasl\body_keypoint"
+_C.file_train = # your train file path
+_C.file_val = 
+_C.file_test = 
+_C.input = # your video data path
+_C.keypoints_body_path = # your body keypoint data path
 _C.dataset = 'wlasl100'
-_C.datadir = r'D:\SLR_dataset\WLASL\origin_frames'
+_C.datadir = # your video data path   = _C.input
 _C.num_frames = 16
 _C.frames_per_group = 1
 _C.num_clips = 1
@@ -51,7 +51,7 @@ _C.num_class = 100
 _C.modality = 'rgb'
 _C.dense_sampling = False
 _C.resume = False
-_C.resume_path = r'E:\chexiao\projects\output1\output_mvits_pose_100\best_model.pth'
+_C.resume_path = 
 
 
 # Add custom config with default values.
