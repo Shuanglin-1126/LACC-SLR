@@ -1,0 +1,41 @@
+device: 'cuda:0'
+optim: 'adamw'
+momentum: 0.9
+eps: 1e-8
+lr: 1e-4
+minlr: 1e-6
+beta1: 0.9
+beta2: 0.999
+weight_decay: 5e-2
+epoch: 60
+accumulation_steps: 1
+warm_epoch: 0
+warm_lr: 1e-3
+save_model_fre: 20
+batch_size: 8
+
+emd_dim: 768
+drop_out: 0.1
+backbone_net: 'mvit_s'
+fused_posi: 1
+
+shape: [224, 224]
+output_root: "E:\chexiao\projects\output\output_mobilenet"
+
+file_train: "D:\SLR_dataset\WLASL\origin_frames\wlasl100train_all_frame.txt"
+file_val: "D:\SLR_dataset\WLASL\origin_frames\wlasl100val_all_frame.txt"
+file_test: "D:\SLR_dataset\WLASL\origin_frames\wlasl100test_all_frame.txt"
+input: "D:\SLR_dataset\WLASL\origin_frames"
+keypoints_body_path: "E:\SLR_dataset\wlasl\body_keypoint"
+dataset: "wlasl100"
+datadir: "D:\SLR_dataset\WLASL\origin_frames"
+num_frames: 16
+frames_per_group: 1
+num_clips: 1
+num_class: 100
+modality: 'rgb'
+dense_sampling: False
+resume: False
+resume_path: "E:\chexiao\projects\output1\output_mvits_pose_100\best_model.pth"
+
+
