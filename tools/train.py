@@ -162,13 +162,12 @@ def get_transform(is_train=True):
     augmentor = torchvision.transforms.Compose(augments)
     return augmentor
 
-def main():
+def main(args):
     seed = 42
     np.random.seed(seed)
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
-    args = get_args()
 
     assert args.output_root != ""
     assert args.input != ""
@@ -329,9 +328,14 @@ def main():
     print('best_acc1: {}, best_acc5: {}'.format(best_acc1, best_acc5))
 
 
-
 if __name__ == "__main__":
     os.environ['TORCH_LOGS'] = '+dynamo'
     os.environ['TORCHDYNAMO_VERBOSE'] = '1'
 
-    main()
+    from slr.config.defaults import get_cfg
+    config_file = r'E:\chexiao\projects\slr\config\clip_ori.yaml'
+    cfg = get_cfg()
+    cfg.merge_from_file(config_file)
+
+    main(cfg)
+
