@@ -104,6 +104,16 @@ python prediction.py
 ## Citation
 
 ```
+@article{TAO2026112941,
+title = {Local attention and contrastive clustering network for sign language recognition},
+journal = {Pattern Recognition},
+volume = {173},
+pages = {112941},
+year = {2026},
+issn = {0031-3203},
+doi = {https://doi.org/10.1016/j.patcog.2025.112941},
+author = {Tangfei Tao and Xiao Che and Yizhe Zhao and Zhihao Yang},
+}
 ```
 
 ## Acknowledgment
