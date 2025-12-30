@@ -118,5 +118,10 @@ author = {Tangfei Tao and Xiao Che and Yizhe Zhao and Zhihao Yang},
 
 ## Acknowledgment
 
-This project is based on MViTv2 ([paper](https://arxiv.org/abs/2112.01526), [code](https://github.com/facebookresearch/mvit)), [action-recognition-pytorch](https://arxiv.org/abs/2112.01526).
+This project is built upon the following open-source works:
+
+- **MViTv2**：  A video transformer architecture proposed in ([paper](https://arxiv.org/abs/2112.01526), Code available at [code](https://github.com/facebookresearch/mvit)), We used the model architecture and training pipeline from this repository.
+- **action-recognition-pytorch**: A PyTorch implementation for action recognition. Available at [paper](https://arxiv.org/abs/2112.01526), We adapted parts of the codebase for our experiments.
+
+We thank the authors for their contributions and open-sourcing these valuable tools.
 
